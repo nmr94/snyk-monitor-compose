@@ -7,8 +7,9 @@ finally run a Snyk monitor on them.
 * Snyk CLI
 
 ## Usage
-1. Export your Snyk API token `export SNYK_TOKEN=abc1234-12312aa`
-2. Run the tool `python3 snyk-monitor-compose.py`
+1. Set your value for the `SNYK_ORG_SLUG` in the script. Monitored snapshots will get put in this org.
+2. Export your Snyk API token `export SNYK_TOKEN=abc1234-12312aa`
+3. Run the tool `python3 snyk-monitor-compose.py`
 
 You'll see the tool print out all of the compose files found, the images within those files, and
 then it will start monitoring those with Snyk. Once the monitor has finished, you'll see the 
